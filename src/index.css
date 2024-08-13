@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  * {
+    @apply box-border font-outfit;
+  }
+
+  body {
+    @apply m-0 p-0 scroll-smooth bg-primary leading-[1.5] text-[16px];
+  }
+
+  h4 {
+    @apply  xs:text-[1rem] text-[0.9rem] text-secondary font-medium ;
+  }
+
+  footer {
+    @apply 2xl:text-[1rem] text-[0.9rem] text-secondary font-medium
+  }
+
+  h5 {
+     @apply  xs:text-[1rem] text-[0.9rem] text-secondary font-semibold ;
+  }
+
+  .img {
+    @apply hover:-translate-y-[2rem] hover:transform hover:duration-700 duration-700
+  }
+
+  .hero-input-label {
+    @apply uppercase pb-1 sm:text-[.75rem] text-[.70rem] font-normal duration-500 text-[#fff];
+  }
+
+  .hero-input {
+    @apply sm:placeholder:text-[0.9rem] placeholder:text-[0.7rem] text-[0.7rem] text-secondary sm:text-[0.9rem] font-normal remove-arrow bg-transparent py-[0.7rem] xl:w-[80%] w-[75%] outline-none;
+  }
+ 
+  .dashboard {
+    @apply max-w-[290px] w-full h-[97px] max-xs:min-h-[97px] max-xs:h-fit rounded-[8px] flex flex-col p-[1.2rem] xl:items-start items-center justify-center gap-[0.3rem] bg-tertiary border-[#313946] border-2;
+  }
+
+  .dashboard h6 {
+    @apply text-[#6B7584] uppercase font-medium tracking-[1.68px] leading-[1.13] text-[0.8rem];
+  }
+
+  .dashboard p {
+    @apply text-[1.6rem] capitalize font-normal text-secondary leading-[1.13];
+  }
+
+  .table-div {
+    @apply rounded-[10px] border-2  m-4  border-[#313946] overflow-x-auto  lg:overflow-hidden;
+  }
+
+  td:nth-child(7n+0) {
+    @apply pr-6;
+  }
+
+  td:nth-child(7n+1){
+    @apply pl-6
+  }
+
+  tr:last-child td {
+    @apply pb-8;
+  }
+
+  td{
+    @apply p-2;
+  }
+
+  .first-tr td {
+    @apply pt-5 ;
+  }
+ 
+}
+
+
+.table-div::-webkit-scrollbar {
+  display: none;
+}
+
+.table-div {
+  -ms-overflow-style: none;
+  scrollbar-width: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.remove-arrow::-webkit-inner-spin-button, 
+.remove-arrow::-webkit-outer-spin-button { 
+ -webkit-appearance: none; 
+  margin: 0; 
+} 
+  
+ .remove-arrow { 
+  -moz-appearance: textfield; 
+} 
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: 0;
+}
+
+.bankModal {
+  scrollbar-width: thin;
+  scrollbar-color: #151a22;
+}
+
+.bankModal::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.bankModal::-webkit-scrollbar-thumb {
+  background: #151a22;
+  border-radius: 5px;
+}
+
+.bankModal::-webkit-scrollbar-track {
+  background-color: #151a22;
+  border: 1px solid #151a22;
+}
+
+.bankModal::-webkit-scrollbar-button {
+  background-color: #151a22;
+  border-radius: 5px;
+}
+
+.animation-cover {
+    display: inline-block;
+    /* transform: translateY(0.1.5em); */
+    padding: 0px;
+    overflow: hidden;
+}
+
+.animation-container {
+    display: inline-flex;
+    place-items: flex-start;
+    flex-direction: column;
+    transform: translate3d(0px, -10%, 0px);
+    animation: 7s ease 0s infinite normal none running quildly;
+}
+
+@keyframes quildly {
+  0%, 30% {
+    transform: translate3d(0px, -10%, 0px);
+}
+50%, 85% {
+    transform: translate3d(0px, -60%, 0px);
+}
+}
+
